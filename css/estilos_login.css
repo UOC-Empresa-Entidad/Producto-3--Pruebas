@@ -2,7 +2,7 @@
 /* CSS Document */
 
 
-#formulario_administracion{
+#formulario_login{
 	background: linear-gradient(to bottom, white 80%, black);
 	background: -prefix-linear-gradient(top, white 80%, black);
 	margin: 0px auto;
@@ -15,6 +15,7 @@
 	width: 60%;
 	padding-top: 8%;
 	padding-bottom: 7%;
+
 }
 
 table tr td{
@@ -22,8 +23,5 @@ table tr td{
 	padding-bottom: 5%;
 }
 
-#formulario_administracion h1{
-	padding-top: 5%;
-	padding-bottom: 20%;
-}
+
 
