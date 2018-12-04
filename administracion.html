@@ -9,7 +9,17 @@
     <!-- Archivo css propio-->
     <link href="css/estilos_administracion.css" rel="stylesheet">
     </head>
+   
     <body>
+	include "codigo.php";
+	$codigo = new codigo();
+	$codigo ->setusuario(filter_input(INPUT_POST, 'usuario'));
+	$codigo ->setpassword(filter_input(INPUT_POST, 'password'));
+	$codigo ->setemail(filter_input(INPUT_POST, 'email'));
+	$usuario = $codigo->usuario;
+	$password = $codigo->password;
+	$email = $codigo->email;
+	
        <!-- Abrimos div contenedor de bootstrap para la rejilla (grid) -->
         <div class="container text-center">
            <!-- Iniciamos la rejilla con el logo de la imagen corporativa -->
