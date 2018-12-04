@@ -2,16 +2,18 @@
 /* CSS Document */
 
 
+h2{
+	margin-top: 5%;
+}
 
-
-#categorias{
+#lista{
 	padding-top: 6%;
 	margin-bottom: 10%;
 
 }
 
-#categorias p{
-	color: green;
+#lista p{
+	color: blue;
 	font-size:150%;
 }
 
