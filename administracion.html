@@ -7,7 +7,7 @@
     <!-- CSS de Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Archivo css propio-->
-    <link href="css/estilos_categorias.css" rel="stylesheet">
+    <link href="css/estilos_administracion.css" rel="stylesheet">
     </head>
     <body>
        <!-- Abrimos div contenedor de bootstrap para la rejilla (grid) -->
@@ -55,18 +55,29 @@
                   
                        
                        
-        <h1><br>CATEGORÍAS</h1>
-                       
-                   <div id="categorias">
-                   	
-                   	
-                   	<a href="#" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp COMICS</p></a><br>
-                   	<a href="#" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp JUEGOS DE MESA</p></a><br>
-                   	<a href="#" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp MERCHANDISING</p></a>
-                   	
-                   </div>
-                       
-                   
+                       <h1><br>ADMINISTRACIÓN</h1>
+			
+			
+	<div id="formulario_administracion">
+		<center><table>
+				
+				<form action="#" method="post">
+				<tr><td><center><strong>Nuevo usuario:&nbsp</strong><input type="text" name="usuario" id="usuario" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td></tr>
+				<tr><td><center><strong>Nuevo password:&nbsp</strong><input type="password" name="password" id="password" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td></tr>
+				<tr><td><center><strong>Nuevo email:&nbsp</strong><input type="email" name="email" id="email" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td></tr>
+				
+				<!--botón para registrar cambios-->
+				<tr><td><center><button type="submit" style="margin-top: 10%" name="guardar" class="btn btn-success">Guardar</button>
+				
+				<!--botón para visualizar los cambios-->	
+				<button type="submit" style="margin-top: 10%" name="ver_cambios" class="btn btn-info">Ver cambios</button></center></td></tr>
+				
+				</form>
+		</table></center>
+			
+	</div>
+			
+	   
                    
                    
             </div>                    
