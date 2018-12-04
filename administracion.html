@@ -11,6 +11,8 @@
     </head>
    
     <body>
+	 <?php    
+	
 	include "codigo.php";
 	$codigo = new codigo();
 	$codigo ->setusuario(filter_input(INPUT_POST, 'usuario'));
@@ -19,6 +21,8 @@
 	$usuario = $codigo->usuario;
 	$password = $codigo->password;
 	$email = $codigo->email;
+
+	 ?>
 	
        <!-- Abrimos div contenedor de bootstrap para la rejilla (grid) -->
         <div class="container text-center">
