@@ -77,18 +77,49 @@
 				<tr><td><center><strong>Nuevo email:&nbsp</strong><input type="email" name="email" id="email" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td></tr>
 				
 				<!--botón para registrar cambios-->
-				<tr><td><center><button type="submit" style="margin-top: 10%" name="guardar" class="btn btn-success" value="Modificar datos" id="Enviar1">Guardar</button>
+				<tr><td><center><button type="submit" style="margin-top: 10%" name="Enviar1" class="btn btn-success" value="Modificar datos" id="Enviar1">Guardar</button>
 					
 				<!--botón para eliminar-->
-				<button type="submit" style="margin-top: 10%" name="eliminar" class="btn btn-danger" value="Eliminar datos" id="Enviar2">Eliminar</button>	
+				<button type="submit" style="margin-top: 10%" name="Enviar2" class="btn btn-danger" value="Eliminar datos" id="Enviar2">Eliminar</button>	
 				
 				<!--botón para visualizar los cambios-->	
 				<button type="submit" style="margin-top: 10%" name="ver_cambios" class="btn btn-info">Ver cambios</button></center></td></tr>
 				
 				</form>
 		</table></center>
+		
+		
 			
 	</div>
+		<?php
+         
+          switch ((filter_input(INPUT_POST, 'Enviar1')) || (filter_input(INPUT_POST, 'Enviar2'))) {
+         
+          case true: 
+                 if  ((filter_input(INPUT_POST, 'Enviar1'))) { 
+             
+             $consulta3 = $codigo->update ($usuario,$password,$email);
+             
+            }
+            if ((filter_input(INPUT_POST, 'Enviar2'))) { 
+             
+             $consulta2 = $codigo->delete ($usuario);
+             
+         }
+
+              break;
+
+            default:
+                
+              break;
+      }
+         
+     
+         
+
+         
+         
+         ?>
 			
 	   
                    
