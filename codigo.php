@@ -33,7 +33,7 @@ class codigo {
     public function setusuario ($usuario)
     {
        
-        $this->numero = $usuario;
+        $this->usuario = $usuario;
     
     }
     
@@ -49,7 +49,7 @@ class codigo {
     public function setpassword ($password)
     {
        
-        $this->numero = $password;
+        $this->password = $password;
     
     }
     
