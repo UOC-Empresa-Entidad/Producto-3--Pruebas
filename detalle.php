@@ -36,7 +36,7 @@
                       <a class="nav-link" href="categorias.html">Categorías</a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="#">Página 3</a>
+                      <a class="nav-link" href="carro_compra.html"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
                       </li>
                       <li class="nav-item">
                       <a class="nav-link" href="administracion.html">Administración</a>

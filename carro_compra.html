@@ -7,7 +7,7 @@
     <!-- CSS de Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Archivo css propio-->
-    <link href="css/estilos_categorias.css" rel="stylesheet">
+    <link href="css/estilos_detalle.css" rel="stylesheet">
     </head>
     <body>
        <!-- Abrimos div contenedor de bootstrap para la rejilla (grid) -->
@@ -29,21 +29,18 @@
                     </button>
                     <div class="collapse navbar-collapse" id="inicio">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item">
+                      <li class="nav-item ">
                       <a class="nav-link" href="index.html">Inicio </a>
                       </li>
-                      <li class="nav-item active">
-                      <a class="nav-link" href="categorias.html">Categorías <span class="sr-only">(current)</span></a>
-                      </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="carro_compra.html"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
+                      <a class="nav-link" href="categorias.html">Categorías</a>
                       </li>
                       <li class="nav-item">
                       <a class="nav-link" href="administracion.html">Administración</a>
                       </li>
                     </ul>
                       <form class="form-inline my-2 my-lg-0">
-                       <button type="submit" name="registro" class="btn btn-outline-warning mx-4" onclick="location='registro.html'">Registrarse</button>
+                       <button type="submit" name="registro" class="btn btn-outline-warning mx-4">Registrarse</button>
                        <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.html'">Iniciar Sesión</button>
                     </form>
                       
@@ -55,18 +52,33 @@
                   
                        
                        
-        <h1><br>CATEGORÍAS</h1>
-                       
-                   <div id="categorias">
-                   	
-                   	
-                   	<a href="lista_comics.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp COMICS</p></a><br>
-                   	<a href="lista_juegosmesa.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp JUEGOS DE MESA</p></a><br>
-                   	<a href="lista_merchandising.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp MERCHANDISING</p></a>
-                   	
-                   </div>
-                       
-                   
+            <h1>Carro de la compra</h1>
+			
+			
+		<div id="carro_compra">	
+			<ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Producto 1. Cantidad: 3
+                <span class="badge badge-primary badge-pill">12.95 €</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Producto 3. Cantidad: 1
+                <span class="badge badge-primary badge-pill">22.50 €</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Producto 7. Cantidad: 1
+                <span class="badge badge-primary badge-pill">18.10 €</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total:
+                <span class="badge badge-primary badge-pill">53.55 €</span>
+              </li>
+            </ul>
+			<div id="boton">
+				<button type="button" class="btn btn-success">Terminar compra</button>    
+         	</div>
+				
+		</div>
                    
                    
             </div>                    
