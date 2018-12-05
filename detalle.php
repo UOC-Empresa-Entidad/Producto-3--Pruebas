@@ -82,7 +82,7 @@
 			</table>
             </div>
 			<div id="boton">
-				<button type="button" class="btn btn-success">Comprar</button>    
+				<button type="button" class="btn btn-success" onclick="#">Comprar</button>    
          	</div>
 				
 		</div>
