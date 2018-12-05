@@ -21,7 +21,7 @@ class codigo {
    
    //recogemos variables
     
-     public function getusuario () // cambiar variables cuando javi haga plantilla html. coge variables login usuarios
+     public function getusuario () 
     
     {
       
@@ -37,7 +37,7 @@ class codigo {
     
     }
     
-    public function getpassword () // cambiar variables cuando javi haga plantilla html. Coge contraseña login de usuarios
+    public function getpassword () 
     
     {
       
@@ -53,7 +53,7 @@ class codigo {
     
     }
     
-    public function getemail () // cambiar variables cuando javi haga plantilla html. Coge contraseña login de usuarios
+    public function getemail () 
     
     {
       
