@@ -65,6 +65,7 @@
 				<tr bgcolor="#C3C1C1"> 
 					<td> 
 						<table width="100%" border="0" cellspacing="0" cellpadding="4"> 
+						<form action="#" method="post">	
 							<tr bgcolor="#FFFFFF"> 
 								<td>Nombre</td>
 								<td><input class="form-control" type="text" name="nombre" id="nombre" style="text-align: center"></td>
@@ -79,9 +80,10 @@
 							</tr>
 							<tr bgcolor="#FFFFFF"> 
 								<td></td>
-								<td><center><button type="button" class="btn btn-success" style="margin-bottom: 2%">Enviar</button></center></td>
+								<td><center><button type="submit" name="enviar" class="btn btn-success" style="margin-bottom: 2%">Enviar</button></center></td>
 							</tr>
 							</tr> 
+							</form>
 						</table>
 					</td> 
 				</tr> 
