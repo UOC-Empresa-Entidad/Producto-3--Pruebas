@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2{
+	margin-bottom: 10%;
+
+}
+
+#bloque{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color:#F1EEEE;
+	margin-bottom: 20%;
+}
+
+#bloque #izquierda{
+	float: left;
+	width: 50%;
+}
+
+#bloque #derecha{
+	float: right;
+	width: 50%;
+}
+
+#bloque #izquierda td{
+
+	padding-bottom: 15%;
+}
+
+#bloque #derecha td{
+
+	padding-bottom: 8%;
+}
+
+#bloque #boton{
+	padding-top: 30%;
+}
