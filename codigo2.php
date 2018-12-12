@@ -8,7 +8,8 @@ class Conectar
 //establecemos la conexión con la base de datos
     public static function con()
     {
-       $con = new mysqli ("localhost", "id7718276_byteraiders_user", "Byteraiders2018", "id7718276_byteraiders");
+//       $con = new mysqli ("localhost", "id7718276_byteraiders_user", "Byteraiders2018", "id7718276_byteraiders");
+        $con = new mysqli ("localhost", "root", "1984", "p8");
        if ($con->connect_errno) {
             printf("Falló la conexión: %s\n", $con->connect_error);
             exit();
@@ -225,7 +226,7 @@ class codigo2 {
     public function setusuario ($usuario)
     {
        
-        $this->numero = $usuario;
+        $this->usuario = $usuario;
     
     }
     
@@ -241,7 +242,7 @@ class codigo2 {
     public function setpassword ($password)
     {
        
-        $this->numero = $password;
+        $this->password = $password;
     
     }
     
