@@ -29,8 +29,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="inicio">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                      <li class="nav-item">
+                      <a class="nav-link" href="index.html">Inicio </a>
                       </li>
                       <li class="nav-item">
                       <a class="nav-link" href="categorias.html">Categorías</a>
@@ -57,7 +57,7 @@
                        
         <h1><br>DETALLE</h1>
 			
-		<h2><br>PRODUCTO: <!--meter aquí la varible del producto--></h2>	
+		<h2><br>PRODUCTO: <!--meter aquí la variable del producto-->PRECIO:<!--meter aquí la variable del precio--> </h2>	
 			
 			
 		<div id="detalle">	
