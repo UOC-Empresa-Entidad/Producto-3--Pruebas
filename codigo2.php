@@ -8,13 +8,12 @@ class Conectar
 //establecemos la conexión con la base de datos
     public static function con()
     {
-//       $con = new mysqli ("localhost", "id7718276_byteraiders_user", "Byteraiders2018", "id7718276_byteraiders");
-        $con = new mysqli ("localhost", "root", "1984", "p8");
+       $con = new mysqli ("localhost", "id7718276_byteraiders_user", "Byteraiders2018", "id7718276_byteraiders");
        if ($con->connect_errno) {
             printf("Falló la conexión: %s\n", $con->connect_error);
             exit();
         }else{
-       
+            $con->set_charset('utf8');
             return $con;
     
         }
