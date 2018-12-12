@@ -42,10 +42,12 @@
                       <a class="nav-link" href="administracion.html">Administración</a>
                       </li>
                     </ul>
+<!-- En esta vista estos botones no aparecen
                       <form class="form-inline my-2 my-lg-0">
                        <button type="submit" name="registro" class="btn btn-outline-warning mx-4">Registrarse</button>
                        <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.html'">Iniciar Sesión</button>
                     </form>
+-->
                       
     </div>
     </nav>
@@ -70,14 +72,17 @@
 
 					<table style="margin-left: 20%">
 						<tr>
-							<td><center><strong>Nombre:&nbsp</strong><input type="text" name="nombre_producto" id="nombre_producto" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td>
+							<td><center><strong>Nombre:&nbsp;</strong><input type="text" name="nombre_producto" id="nombre_producto" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td>
 						</tr>
 						<tr>
-							<td style="float: left"><center><strong>Seccion:&nbsp</strong><select name="lista" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;">
+							<td style="float: left"><center><strong>Seccion:&nbsp;</strong><select name="lista" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;">
 								<option value="1">Comics</option>
 								<option value="2">Juegos de mesa</option>
 								<option value="3">Merchandising</option>
 							</select></center></td>
+						</tr>
+						<tr>
+						    <td style="float: left"><center><strong>Precio:&nbsp;</strong> <input type="text" name="precio_producto" id="precio_producto" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td>
 						</tr>
 					</table>
 
