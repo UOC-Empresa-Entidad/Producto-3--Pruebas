@@ -17,7 +17,7 @@ $codigo2->setcp(filter_input(INPUT_POST, 'cp'));
 $codigo2->settelefono(filter_input(INPUT_POST, 'telefono'));
 $codigo2->setemail(filter_input(INPUT_POST, 'email'));
 $codigo2->setusuario(filter_input(INPUT_POST, 'usuario'));
-$codigo2->sertpassword(filter_input(INPUT_POST, 'password'));
+$codigo2->setpassword(filter_input(INPUT_POST, 'password'));
 
 $nombre_usuario = $codigo2->nombre_usuario ;
 $apellidos = $codigo2->apellidos ;
