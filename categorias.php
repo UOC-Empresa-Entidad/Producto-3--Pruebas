@@ -1,3 +1,4 @@
+<?php include 'session.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -35,16 +36,24 @@
                       <li class="nav-item active">
                       <a class="nav-link" href="categorias.php">Categorías <span class="sr-only">(current)</span></a>
                       </li>
-
-                      <li class="nav-item">
-                      <a class="nav-link" href="carro_compra.php"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
-                      </li>
-                      <li class="nav-item">
+                        <li class="nav-item">
                       <a class="nav-link" href="contacto.php">Contacto</a>
                       </li>
-                      <li class="nav-item">
-                      <a class="nav-link" href="administracion.php">Administración</a>
-                      </li>
+                      <?php 
+                        if ($usuario==0) {
+                      echo "<li class='nav-item'>";
+                      echo "<a class='nav-link disabled' href='#'><img src='img/cart-4x_3.png' alt='carro de la compra'></a></li>";
+                      echo "<li class='nav-item'>";
+                      echo "<a class='nav-link disabled' href='#'>Administración</a>";
+                      echo "</li>"; 
+                        } else {
+                        echo "<li class='nav-item'>";
+                      echo "<a class='nav-link' href='carro_compra.php'><img src='img/cart-4x_1.png' alt='carro de la compra'></a></li>";
+                      echo "<li class='nav-item '>";
+                      echo "<a class='nav-link' href='administracion.php'>Administración</a>";
+                      echo "</li>";
+                        }
+                        ?>
                     </ul>
                       <form class="form-inline my-2 my-lg-0">
                        <button type="button" name="registro" class="btn btn-outline-warning mx-4" onclick="location.href='registro.php'">Registrarse</button>
