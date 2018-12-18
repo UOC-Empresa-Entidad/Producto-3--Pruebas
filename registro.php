@@ -39,6 +39,9 @@
                       <li class="nav-item">
                       <a class="nav-link" href="carro_compra.html"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
                       </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="contacto.php">Contacto</a>
+                      </li>
 <!-- El enlace a la administración no debe estar disponible en la pantalla de registro cuando aún no hemos abierto sesión.
                       <li class="nav-item">
                       <a class="nav-link" href="administracion.html">Administración</a>

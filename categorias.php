@@ -7,7 +7,7 @@
     <!-- CSS de Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Archivo css propio-->
-    <link href="css/estilos_contacto.css" rel="stylesheet">
+    <link href="css/estilos_categorias.css" rel="stylesheet">
     </head>
     <body>
        <!-- Abrimos div contenedor de bootstrap para la rejilla (grid) -->
@@ -18,7 +18,6 @@
                     <img src="img/frikizone4.png" class="img-rounded img-fluid float-center enter" title="Logo FrikiZone" alt="Logo FrikiZone" />
                 </div>
             </div>
-
         
             <!-- El siguiente renglón de la rejilla será el menú de navegación -->
             <div class="row">
@@ -30,19 +29,26 @@
                     </button>
                     <div class="collapse navbar-collapse" id="inicio">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item ">
+                      <li class="nav-item">
                       <a class="nav-link" href="index.html">Inicio </a>
                       </li>
+                      <li class="nav-item active">
+                      <a class="nav-link" href="categorias.php">Categorías <span class="sr-only">(current)</span></a>
+                      </li>
+
                       <li class="nav-item">
-                      <a class="nav-link" href="categorias.html">Categorías</a>
+                      <a class="nav-link" href="carro_compra.php"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="administracion.html">Administración</a>
+                      <a class="nav-link" href="contacto.php">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="administracion.php">Administración</a>
                       </li>
                     </ul>
                       <form class="form-inline my-2 my-lg-0">
-                       <button type="submit" name="registro" class="btn btn-outline-warning mx-4">Registrarse</button>
-                       <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.html'">Iniciar Sesión</button>
+                       <button type="button" name="registro" class="btn btn-outline-warning mx-4" onclick="location.href='registro.php'">Registrarse</button>
+                       <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.php'">Iniciar Sesión</button>
                     </form>
                       
     </div>
@@ -53,52 +59,22 @@
                   
                        
                        
-            <h1><br>Contacto</h1>
-                  
-                  
-         <div id="contacto">	
-			<div id="tabla">
-			<center><table width="80%" border="0" cellspacing="0" cellpadding="1"> 
-				<tr bgcolor="#C3C1C1" align="center"> 
-					<td><b><font color="#FFFFFF">Formulario de contacto</font></b></td> 
-				</tr> 
-				<tr bgcolor="#C3C1C1"> 
-					<td> 
-						<table width="100%" border="0" cellspacing="0" cellpadding="4"> 
-							<form action="#" method="post">
-							<tr bgcolor="#FFFFFF"> 
-								<td>Nombre</td>
-								<td><input class="form-control" type="text" name="nombre" id="nombre" style="text-align: center"></td>
-								
-							<tr bgcolor="#FFFFFF"> 
-								<td>Correo</td>
-								<td><input class="form-control" type="email" name="email" id="email" style="text-align: center"></td> 
-							</tr>
-							<tr bgcolor="#FFFFFF"> 
-								<td>Mensaje</td>
-								<td><textarea class="form-control" name="mensaje" id="mensaje" rows="10" cols="40"></textarea></td> 
-							</tr>
-							<tr bgcolor="#FFFFFF"> 
-								<td></td>
-								<td><center><button type="submit" name="enviar" class="btn btn-success" style="margin-bottom: 2%">Enviar</button></center></td>
-							</tr>
-							</tr> 
-							</form>
-						</table>
-					</td> 
-				</tr> 
-			</table></center>
-            </div>
-			<div id="boton">
-				    
-         	</div>
-				
-		</div>         
-                  
-                  
-                           
+        <h1><br>CATEGORÍAS</h1>
+                       
+                   <div id="categorias">
+                   	
+                   	
+                   	<a href="lista_comics.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp COMICS</p></a><br>
+                   	<a href="lista_juegosmesa.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp JUEGOS DE MESA</p></a><br>
+                   	<a href="lista_merchandising.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp MERCHANDISING</p></a>
+                   	
+                   </div>
+                       
+                   
+                   
+                   
+            </div>                    
         <script src="js/jquery-3.3.1.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
-	</div>
     </body>
 </html>

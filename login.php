@@ -7,7 +7,7 @@
     <!-- CSS de Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Archivo css propio-->
-    <link href="css/estilos_añadir_producto.css" rel="stylesheet">
+    <link href="css/estilos_login.css" rel="stylesheet">
     </head>
     <body>
        <!-- Abrimos div contenedor de bootstrap para la rejilla (grid) -->
@@ -29,8 +29,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="inicio">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item ">
-                      <a class="nav-link" href="index.html">Inicio </a>
+                      <li class="nav-item">
+                      <a class="nav-link" href="index.html">Inicio</a>
                       </li>
                       <li class="nav-item">
                       <a class="nav-link" href="categorias.html">Categorías</a>
@@ -39,15 +39,18 @@
                       <a class="nav-link" href="carro_compra.html"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
                       </li>
                       <li class="nav-item">
+                      <a class="nav-link" href="contacto.php">Contacto</a>
+                      </li>
+<!-- El enlace a la administración no debe estar disponible en la pantalla de login cuando aún no hemos abierto sesión.
+                      <li class="nav-item">
                       <a class="nav-link" href="administracion.html">Administración</a>
                       </li>
+-->
                     </ul>
-<!-- En esta vista estos botones no aparecen
                       <form class="form-inline my-2 my-lg-0">
-                       <button type="submit" name="registro" class="btn btn-outline-warning mx-4">Registrarse</button>
+                       <button type="button" name="registro" class="btn btn-outline-warning mx-4" onclick="location.href='registro.php'">Registrarse</button>
                        <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.html'">Iniciar Sesión</button>
                     </form>
--->
                       
     </div>
     </nav>
@@ -57,57 +60,22 @@
                   
                        
                        
-        <h1><br>AÑADIR PRODUCTO</h1>
+                       <h1><br>INICIAR SESIÓN</h1>
+                       
+                       <div id="formulario_login">
+		<center><table>
+				
+				<form action="#" method="post">
+				<tr><td><center><strong>Usuario:</strong>     <input type="text" name="usuario" id="usuario" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td></tr>
+				<tr><td><center><strong>Password:</strong>     <input type="password" name="password" id="password" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td></tr>
+				<tr><td><center> <button type="submit" style="margin-top: 10%" name="login" class="btn btn-success">Acceder</button></center></td></tr>
+				
+				</form>
+		</table></center>
 			
-		<h2><br>ADMINISTRACIÓN</h2>	
-			
-			
-		
-         <div id="bloque">
-         	
-         	
-         	<form action="#" method="post">
-         	
-				<div id="izquierda">
-
-					<table style="margin-left: 20%">
-						<tr>
-							<td><center><strong>Nombre:&nbsp;</strong><input type="text" name="nombre_producto" id="nombre_producto" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td>
-						</tr>
-						<tr>
-							<td style="float: left"><center><strong>Seccion:&nbsp;</strong><select name="lista" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;">
-								<option value="1">Comics</option>
-								<option value="2">Juegos de mesa</option>
-								<option value="3">Merchandising</option>
-							</select></center></td>
-						</tr>
-						<tr>
-						    <td style="float: left"><center><strong>Precio:&nbsp;</strong> <input type="text" name="precio_producto" id="precio_producto" style=" text-align: center; margin: 0px auto;border-radius: 10px 10px 10px 10px;moz-border-radius: 10px 10px 10px 10px;webkit-border-radius:10px 10px 10px 10px;border: 1px solid #000000;"></center></td>
-						</tr>
-					</table>
-
-				</div>
-
-				<div id="derecha">
-					<table>
-						<tr><td><center><strong>Imagen:&nbsp</strong><input type="file" name="imagen_producto" id="imagen_producto"></center></td></tr>
-						<tr>
-							<td style="float: left"><strong>Descripción:&nbsp</strong></td>
-							<td style="float: left"><textarea class="form-control" name="descripcion_producto" id="descripcion_producto" rows="8" cols="40"></textarea></td>
-						</tr>
-					</table>
-
-				</div>
-         	
-         		<div id="boton">
-         		<center><button type="submit" name="añadir" class="btn btn-success">Añadir producto</button></center>
-         		</div>
-         	</form>
-         	
-         </div>         
-                  
-                  
-                  
+	</div>
+                       
+                   
                    
                    
             </div>                    

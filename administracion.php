@@ -47,14 +47,18 @@
                       <a class="nav-link" href="index.html">Inicio </a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="categorias.html">Categorías</a>
+                      <a class="nav-link" href="categorias.php">Categorías</a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="carro_compra.html"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
+                      <a class="nav-link" href="carro_compra.php"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
+                      </li>
+                         <li class="nav-item">
+                      <a class="nav-link" href="contacto.php">Contacto</a>
                       </li>
                       <li class="nav-item active">
-                      <a class="nav-link" href="administracion.html">Administración <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="administracion.php">Administración <span class="sr-only">(current)</span></a>
                       </li>
+
                     </ul>
 <!-- Se supone que para llegar a la pantalla de administración ya debemos estar logados, los botones de registro y login no deben estar disponibles.
                       <form class="form-inline my-2 my-lg-0">
