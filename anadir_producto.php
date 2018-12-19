@@ -1,3 +1,4 @@
+<?php include 'session.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -90,9 +91,9 @@
 
 				<div id="derecha">
 					<table>
-						<tr><td><center><strong>Imagen:&nbsp</strong><input type="file" name="imagen_producto" id="imagen_producto"></center></td></tr>
+						<tr><td><center><strong>Imagen:&nbsp;</strong><input type="file" name="imagen_producto" id="imagen_producto"></center></td></tr>
 						<tr>
-							<td style="float: left"><strong>Descripción:&nbsp</strong></td>
+							<td style="float: left"><strong>Descripción:&nbsp;</strong></td>
 							<td style="float: left"><textarea class="form-control" name="descripcion_producto" id="descripcion_producto" rows="8" cols="40"></textarea></td>
 						</tr>
 					</table>

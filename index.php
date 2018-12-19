@@ -8,7 +8,7 @@
     <!-- CSS de Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Archivo css propio-->
-    <link href="css/estilos_detalle.css" rel="stylesheet">
+    <link href="css/estilos_categorias.css" rel="stylesheet">
     </head>
     <body>
        <!-- Abrimos div contenedor de bootstrap para la rejilla (grid) -->
@@ -30,21 +30,33 @@
                     </button>
                     <div class="collapse navbar-collapse" id="inicio">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item ">
+                      <li class="nav-item active">
                       <a class="nav-link" href="index.html">Inicio </a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="categorias.php">Categorías</a>
+                      <a class="nav-link" href="categorias.php">Categorías <span class="sr-only">(current)</span></a>
                       </li>
-                      <li class="nav-item active">
-                      <a class="nav-link" href="carro_compra.php"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
-                      </li>
-                      <li class="nav-item">
+                        <li class="nav-item">
                       <a class="nav-link" href="contacto.php">Contacto</a>
                       </li>
-                      <li class="nav-item">
-                      <a class="nav-link" href="administracion.php">Administración</a>
-                      </li>
+                      <?php 
+                        if ($usuario==0) {
+                      echo "<li class='nav-item'>";
+                      echo "<a class='nav-link disabled' href='#'><img src='img/cart-4x_3.png' alt='carro de la compra'></a></li>";
+                      echo "<li class='nav-item'>";
+                      echo "<a class='nav-link disabled' href='#'>Administración</a>";
+                      echo "</li>"; 
+                        } else {
+                        echo "<li class='nav-item'>";
+                      echo "<a class='nav-link' href='carro_compra.php'><img src='img/cart-4x_1.png' alt='carro de la compra'></a></li>";
+                      echo "<li class='nav-item '>";
+                      echo "<a class='nav-link' href='administracion.php'>Administración</a>";
+                      echo "</li>";
+                        echo "<li class='nav-item'>";
+                            echo "<a class='nav-link disabled' href='#'>$usuario</a>";
+                            echo "</li>";
+                        }
+                        ?>
                     </ul>
                       <form class="form-inline my-2 my-lg-0">
                        <button type="button" name="registro" class="btn btn-outline-warning mx-4" onclick="location.href='registro.php'">Registrarse</button>
@@ -54,53 +66,3 @@
     </div>
     </nav>
   </div>
-
-                   </div>
-                  
-                       
-                       
-            <h1>Carro de la compra</h1>
-			
-			<?php 
-            if ($usuario==0) {
-                ?>
-                <div id="carro_compra">	
-			    <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                Carro de la compra vacío, o no se ha iniciado sesión.
-                <span class="badge badge-primary badge-pill">0 €</span>
-              </li>
-                    </ul>
-            </div>
-                <?php
-            } else {
-            
-            ?>
-		<div id="carro_compra">	
-			<ul class="list-group">
-              <?php foreach( $_COOKIE as $k => $v){
-                        foreach( $v as $k2 =>$v2) {
-                            ?>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                           <?php echo "$k2 : $v2"; ?>
-                <span class="badge badge-primary badge-pill"><?php $precio ?>€</span>
-                  </li>
-                       <?php         
-                        }
-            }
-                ?>
-            </ul>
-			<div id="boton">
-				<button type="button" class="btn btn-success">Terminar compra</button>    
-         	</div>
-				
-		</div>
-         <?php
-            }
-            ?>
-                   
-            </div>                    
-        <script src="js/jquery-3.3.1.js"></script>
-        <script src="js/bootstrap.bundle.js"></script>
-    </body>
-</html>

@@ -1,3 +1,4 @@
+<?php include 'session.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -82,7 +83,7 @@
 			</table>
             </div>
 			<div id="boton">
-				<button type="button" class="btn btn-success" onclick="#">Comprar</button>    
+				<button type="button" class="btn btn-success" onclick="productoalacookie.php">Comprar</button>    
          	</div>
 				
 		</div>
