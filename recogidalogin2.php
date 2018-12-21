@@ -4,10 +4,10 @@
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
    
-$db = 'P8'; 
+$db = 'id7718276_byteraiders'; 
 $host = 'localhost'; 
-$user = 'root'; 
-$pass = ''; 
+$user = 'id7718276_byteraiders_user'; 
+$pass = 'Byteraiders2018'; 
 $conn = new PDO("mysql:dbname=".$db.";host=".$host,$user, $pass); 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
