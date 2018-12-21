@@ -33,13 +33,13 @@
                       <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="categorias.html">Categorías</a>
+                      <a class="nav-link" href="categorias.php">Categorías</a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="carro_compra.html"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
+                      <a class="nav-link" href="carro_compra.php"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="administracion.html">Administración</a>
+                      <a class="nav-link" href="administracion.php">Administración</a>
                       </li>
                     </ul>
                       <form class="form-inline my-2 my-lg-0">
