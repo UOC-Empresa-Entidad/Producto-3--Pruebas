@@ -49,6 +49,7 @@ $result->bindValue(':cp', $j, PDO::PARAM_INT);
 $result->execute();
 $lastId = $conn->lastInsertId();
 
+  //tabla 3
 $sql ="INSERT INTO Calle (Calle,Numero,Piso, Puerta) VALUES (:Calle,:Numero, :Piso,:Puerta) ;";
 $result = $conn->prepare($sql); 
 $result->bindValue(':Calle', $d, PDO::PARAM_STR); 
@@ -58,14 +59,14 @@ $result->bindValue(':Puerta', $g, PDO::PARAM_STR);
 $result->execute();
 $lastId = $conn->lastInsertId();
 
-// tabla 3 
+// tabla 4
 $sql = "INSERT INTO tipousuarios (tipo) VALUES (:tipo) ;";
 $result = $conn->prepare($sql); 
 $result->bindValue(':tipo', $c, PDO::PARAM_STR); 
 $result->execute();
 $lastId = $conn->lastInsertId();
 
-// tabla 4 
+// tabla 5 
 $sql =  "INSERT INTO usuarios (tipousuario,calle, poblacion, usuario, password, nombre, apellidos, telefono, email )VALUES (:c_id,:d_id,:i_id, :usuario, :password, :nombre,:apellidos,:telefono,:email) ;";
 $result = $conn->prepare($sql); 
 $result->bindValue(':c_id', $lastId, PDO::PARAM_INT); 
