@@ -61,7 +61,7 @@
                     </ul>
                       <form class="form-inline my-2 my-lg-0">
                        <button type="button" name="registro" class="btn btn-outline-warning mx-4" onclick="location.href='registro.php'">Registrarse</button>
-                       <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.html'">Iniciar Sesión</button>
+                       <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.php'">Iniciar Sesión</button>
                     </form>
                       
     </div>

@@ -39,7 +39,7 @@ header("Location: categorias.php");
 }
 else
 {
-echo "Usuario no registrado";  
+echo "Usuario no registrado. <a href='login.php'>Volver</a>";  
 } 
 }
 catch(PDOException $e) {
