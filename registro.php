@@ -1,3 +1,4 @@
+<?php include 'session.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -42,6 +43,17 @@
                       <li class="nav-item">
                       <a class="nav-link" href="contacto.php">Contacto</a>
                       </li>
+                      <?php
+						if($usuario==0){
+							echo "<li class='nav-item'>";
+                      echo "<a class='nav-link disabled' href='#'>Logout</a>";							
+                      echo "</li>";
+                        } else {
+							echo "<li class='nav-item '>";
+                      echo "<a class='nav-link' href='cerrar.php'>Cerrar</a>";
+                      echo "</li>";
+                        }
+						?>
 <!-- El enlace a la administración no debe estar disponible en la pantalla de registro cuando aún no hemos abierto sesión.
                       <li class="nav-item">
                       <a class="nav-link" href="administracion.html">Administración</a>

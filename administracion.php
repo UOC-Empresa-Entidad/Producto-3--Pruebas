@@ -58,6 +58,9 @@
                       <li class="nav-item active">
                       <a class="nav-link" href="administracion.php">Administración <span class="sr-only">(current)</span></a>
                       </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="cerrar.php">Logout</a>
+                      </li>
 
                     </ul>
 <!-- Se supone que para llegar a la pantalla de administración ya debemos estar logados, los botones de registro y login no deben estar disponibles.

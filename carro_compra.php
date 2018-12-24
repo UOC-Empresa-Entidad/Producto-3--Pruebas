@@ -45,6 +45,9 @@
                       <li class="nav-item">
                       <a class="nav-link" href="administracion.php">Administración</a>
                       </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="cerrar.php">Logout</a>
+                      </li>
                     </ul>
                       <form class="form-inline my-2 my-lg-0">
                        <button type="button" name="registro" class="btn btn-outline-warning mx-4" onclick="location.href='registro.php'">Registrarse</button>

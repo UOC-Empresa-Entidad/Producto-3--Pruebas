@@ -47,11 +47,17 @@
                       echo "<li class='nav-item'>";
                       echo "<a class='nav-link disabled' href='#'>Administración</a>";
                       echo "</li>"; 
+						echo "<li class='nav-item'>";
+                      echo "<a class='nav-link disabled' href='#'>Logout</a>";							
+                      echo "</li>";
                         } else {
                         echo "<li class='nav-item'>";
                       echo "<a class='nav-link' href='carro_compra.php'><img src='img/cart-4x_1.png' alt='carro de la compra'></a></li>";
                       echo "<li class='nav-item '>";
                       echo "<a class='nav-link' href='administracion.php'>Administración</a>";
+                      echo "</li>";
+						echo "<li class='nav-item '>";
+                      echo "<a class='nav-link' href='cerrar.php'>Cerrar</a>";
                       echo "</li>";
                         }
                         ?>
