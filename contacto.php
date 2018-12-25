@@ -87,7 +87,7 @@
 				<tr bgcolor="#C3C1C1"> 
 					<td> 
 						<table width="100%" border="0" cellspacing="0" cellpadding="4"> 
-						<form action="#" method="post">	
+						<form action="enviar_contacto.php" method="post">	
 							<tr bgcolor="#FFFFFF"> 
 								<td>Nombre</td>
 								<td><input class="form-control" type="text" name="nombre" id="nombre" style="text-align: center"></td>
