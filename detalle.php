@@ -1,4 +1,5 @@
 <?php include 'session.php'; ?>
+<?php include "selec_producto.php"; ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -58,7 +59,7 @@
                        
         <h1><br>DETALLE</h1>
 			
-		<h2><br>PRODUCTO: <!--meter aquí la variable del producto-->PRECIO:<!--meter aquí la variable del precio--> </h2>	
+		<h2><br>PRODUCTO: <?php echo $row[1] ; ?>PRECIO:<?php echo $row[3] ; ?> </h2>	
 			
 			
 		<div id="detalle">	
@@ -75,7 +76,7 @@
 								<td><img src="img/imagen_producto.jpg" width="100" height="100"/></td>
 								
 								<!--Características propias del producto-->
-								<td> Lorem ipsum dolor sit amet consectetur adipiscing elit metus nam conubia porta magnis nisi duis, in per sollicitudin ultrices augue egestas ut platea molestie suscipit interdum a. Lacinia vulputate id ligula purus dictumst maecenas vestibulum sodales nostra, senectus tristique curae blandit sed habitant ornare vehicula scelerisque, eros class porta semper nisi felis malesuada luctus. Eu ultricies quisque nullam laoreet diam, at habitant eros velit curabitur purus, duis potenti mattis hac.</td> 
+								<td> <?php echo $row[2] ; ?></td> 
 							</tr> 
 						</table> 
 					</td> 
