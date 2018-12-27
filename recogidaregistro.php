@@ -1,4 +1,6 @@
 <?php
+
+require_once("./conexion.php");
 // variables del formulario 
 $a = $_POST['nombre_usuario']; 
 $b = $_POST['apellidos']; 
@@ -21,13 +23,7 @@ $n = $_POST['password'];
 
 
 
-// conectar la base da datos 
-$db = 'p8'; 
-$host = 'localhost'; 
-$user = 'root'; 
-$pass = ''; 
-$conn = new PDO("mysql:dbname=".$db.";host=".$host,$user, $pass); 
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 
 // iniciar transacción 
 $conn->beginTransaction();
