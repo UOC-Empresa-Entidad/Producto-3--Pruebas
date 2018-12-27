@@ -67,7 +67,7 @@
          <div id="bloque">
          	
          	
-         	<form action="#" method="post">
+         	<form action="rec_alta_prod.php" method="post">
          	
 				<div id="izquierda">
 
