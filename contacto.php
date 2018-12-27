@@ -41,7 +41,7 @@
                       <a class="nav-link" href="contacto.php">Contacto<span class="sr-only">(current)</span></a>
                       </li>
                       <?php 
-                        if ($usuario==0) {
+                        if ($usuario=NULL) {
                       echo "<li class='nav-item'>";
                       echo "<a class='nav-link disabled' href='#'><img src='img/cart-4x_3.png' alt='carro de la compra'></a></li>";
                       echo "<li class='nav-item'>";
@@ -57,16 +57,16 @@
                       echo "<a class='nav-link' href='administracion.php'>Administración</a>";
                       echo "</li>";
 						echo "<li class='nav-item '>";
-                      echo "<a class='nav-link' href='cerrar.php'>Cerrar</a>";
+                      echo "<a class='nav-link' href='cerrar.php'>Logout</a>";
                       echo "</li>";
                         }
                         ?>
                     </ul>
+                      
                       <form class="form-inline my-2 my-lg-0">
                        <button type="button" name="registro" class="btn btn-outline-warning mx-4" onclick="location.href='registro.php'">Registrarse</button>
                        <button type="button" name="login" class="btn btn-outline-success" onclick="location.href='login.php'">Iniciar Sesión</button>
                     </form>
-                      
     </div>
     </nav>
   </div>

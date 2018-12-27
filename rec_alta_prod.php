@@ -39,7 +39,7 @@ $result->execute();
 
 
 $conn->commit(); 
-echo 'Producto insertado'; 
+echo "Producto insertado. <a href='anadir_producto.php'>Volver</a>"; 
 } catch (PDOException $e) { 
 // si ocurre un error hacemos rollback para anular todos los insert 
 $conn->rollback(); 

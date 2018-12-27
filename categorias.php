@@ -40,7 +40,7 @@
                       <a class="nav-link" href="contacto.php">Contacto</a>
                       </li>
                       <?php 
-                        if ($usuario==0) {
+                        if ($usuario=NULL) {
                       echo "<li class='nav-item'>";
                       echo "<a class='nav-link disabled' href='#'><img src='img/cart-4x_3.png' alt='carro de la compra'></a></li>";
                       echo "<li class='nav-item'>";
@@ -56,7 +56,7 @@
                       echo "<a class='nav-link' href='administracion.php'>Administración</a>";
                       echo "</li>";
 						echo "<li class='nav-item '>";
-                      echo "<a class='nav-link' href='cerrar.php'>Cerrar</a>";
+                      echo "<a class='nav-link' href='cerrar.php'>Logout</a>";
                       echo "</li>";
                         }
                         ?>
@@ -79,9 +79,9 @@
                    <div id="categorias">
                    	
                    	
-                   	<a href="lista_comics.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp COMICS</p></a><br>
-                   	<a href="lista_juegosmesa.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp JUEGOS DE MESA</p></a><br>
-                   	<a href="lista_merchandising.html" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp MERCHANDISING</p></a>
+                   	<a href="lista_comics.php" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp COMICS</p></a><br>
+                   	<a href="lista_juegosmesa.php" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp JUEGOS DE MESA</p></a><br>
+                   	<a href="lista_merchandising.php" style="text-decoration: none"><p><img src="img/boton_verde.jpg" width="25" height="25"/>&nbsp &nbsp MERCHANDISING</p></a>
                    	
                    </div>
                        

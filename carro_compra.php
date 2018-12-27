@@ -65,7 +65,7 @@
             <h1>Carro de la compra</h1>
 			
 			<?php 
-            if ($usuario==0) {
+            if ($usuario=NULL) {
                 ?>
                 <div id="carro_compra">	
 			    <ul class="list-group">

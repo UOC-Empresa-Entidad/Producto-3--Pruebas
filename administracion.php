@@ -50,10 +50,10 @@
                       <a class="nav-link" href="categorias.php">Categorías</a>
                       </li>
                       <li class="nav-item">
-                      <a class="nav-link" href="carro_compra.php"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
-                      </li>
-                         <li class="nav-item">
                       <a class="nav-link" href="contacto.php">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="carro_compra.php"><img src="img/cart-4x_1.png" alt="carro de la compra"></a>
                       </li>
                       <li class="nav-item active">
                       <a class="nav-link" href="administracion.php">Administración <span class="sr-only">(current)</span></a>

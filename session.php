@@ -2,11 +2,11 @@
 if ((isset($_SESSION['usuario'])) && (!empty($_SESSION['usuario']))) {
     $usuario=$_SESSION['usuario'];
 } else {
-    $usuario=0;
+    $usuario=NULL;
 }
 if ((isset($_SESSION['cantidadproductos'])) && (!empty($_SESSION['cantidadproductos']))) {
     $cantidadproducto=$_SESSION['cantidadproductos'];
 } else {
-    $cantidadproductos=0;
+    $cantidadproductos=NULL;
 }
 ?>
