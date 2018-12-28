@@ -59,7 +59,7 @@
                        
         <h1><br>DETALLE</h1>
 			
-		<h2><br>PRODUCTO: <?php echo $row[1] ; ?>PRECIO:<?php echo $row[3] ; ?> </h2>	
+		<h2><br>PRODUCTO: <?php echo $row[1] ; ?>&nbsp &nbsp PRECIO:<?php echo $row[3]."€" ; ?> </h2>	
 			
 			
 		<div id="detalle">	

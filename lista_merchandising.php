@@ -55,16 +55,38 @@
                   
                        
                        
-        <h2><br>LISTA MERCAHNDISING</h2>
+        <h2><br>LISTA MERCAHNDISING</h2><br><br>
                        
-                   <div id="lista">
+                   
+          <?php
+			
+			include("conexion_mysql.php");
+			
+			$query="SELECT p8.producto.producto FROM p8.producto, p8.categoria WHERE p8.categoria.Categoria=3 AND p8.categoria.producto=p8.producto.IdProducto";
+			$result=mysqli_query($conectar,$query);
+			while($produc=mysqli_fetch_array($result)){
+				
+			
+
+					
+			echo		"<a href='detalle.php' style='text-decoration: none'><p><img src='img/boton_azul.jpg' width='25' height='25'/>&nbsp &nbsp ".$produc['producto']."</p></a><br>";
+	
+				
+			}
+                   
+          ?>        
+                   
+                   
+                   
+                   
+                   <!--<div id="lista">
                    	
                    	
                    	<a href="detalle.php" style="text-decoration: none"><p><img src="img/boton_azul.jpg" width="25" height="25"/>&nbsp &nbsp Producto 1 merchandising</p></a><br>
                    	<a href="detalle.php" style="text-decoration: none"><p><img src="img/boton_azul.jpg" width="25" height="25"/>&nbsp &nbsp Producto 2 merchandising</p></a><br>
                    	<a href="detalle.php" style="text-decoration: none"><p><img src="img/boton_azul.jpg" width="25" height="25"/>&nbsp &nbsp Producto 3 merchandising</p></a>
                    	
-                   </div>
+                   </div>-->
                        
                    
                    
