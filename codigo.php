@@ -137,7 +137,166 @@ class codigo {
     }
     
 }
+class fecha {   
+
+
+ public function mostrar(){   
+    
+require_once("./conexion.php");
+
+// iniciar transacción 
+$conn->beginTransaction();
+
+try { 
 
 
 
-?>
+$sql = "SELECT * FROM producto where DATEDIFF(fecha_alta, NOW()) <2;"; 
+$result = $conn->prepare($sql); 
+$result->execute(); 
+//$result->fetch(PDO::FETCH_BOTH);   
+
+
+
+
+$conn->commit(); 
+
+
+    
+foreach ($result as $row){
+  
+    
+     
+   
+ 
+     $p=$row['producto'];
+   
+     echo "<a href='detalle.php?pro=$p' style='text-decoration: none'><p><img src='img/boton_azul.jpg' width='25' height='25'/>&nbsp &nbsp ".$p."</p></a><br>"; 
+
+       
+
+  
+}
+
+
+}
+
+    
+
+
+
+catch(PDOException $e) {
+echo '{"error":{"text":'. $e->getMessage() .'}}';
+}
+
+}
+}
+
+class fecha2 {   
+
+
+ public function mostrar2(){   
+    
+require_once("./conexion.php");
+
+// iniciar transacción 
+$conn->beginTransaction();
+
+try { 
+
+
+
+$sql = "SELECT * FROM producto where DATEDIFF(NOW(), fecha_alta ) >30;"; 
+$result = $conn->prepare($sql); 
+$result->execute(); 
+//$result->fetch(PDO::FETCH_BOTH);   
+
+
+
+
+$conn->commit(); 
+
+
+    
+foreach ($result as $row){
+  
+    
+     
+   
+ 
+     $p=$row['producto'];
+   
+     echo "<a href='detalle.php?pro=$p' style='text-decoration: none'><p><img src='img/boton_azul.jpg' width='25' height='25'/>&nbsp &nbsp ".$p."</p></a><br>"; 
+
+       
+
+  
+}
+
+}
+
+    
+
+
+
+catch(PDOException $e) {
+echo '{"error":{"text":'. $e->getMessage() .'}}';
+}
+
+}
+}
+
+class fecha3 {   
+
+
+ public function mostrar3(){   
+    
+require_once("./conexion.php");
+
+// iniciar transacción 
+$conn->beginTransaction();
+
+try { 
+
+
+
+$sql = "SELECT * FROM producto where DATEDIFF(fecha_alta, NOW()) <30;"; 
+$result = $conn->prepare($sql); 
+$result->execute(); 
+//$result->fetch(PDO::FETCH_BOTH);   
+
+
+
+
+$conn->commit(); 
+
+
+    
+foreach ($result as $row){
+  
+    
+     
+   
+ 
+     $p=$row['producto'];
+   
+     echo "<a href='detalle.php?pro=$p' style='text-decoration: none'><p><img src='img/boton_azul.jpg' width='25' height='25'/>&nbsp &nbsp ".$p."</p></a><br>"; 
+
+       
+
+  
+}
+
+
+}
+
+    
+
+
+
+catch(PDOException $e) {
+echo '{"error":{"text":'. $e->getMessage() .'}}';
+}
+
+}
+}
